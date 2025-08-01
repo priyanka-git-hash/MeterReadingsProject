@@ -110,7 +110,7 @@ namespace MeterReadingsApi.Controllers
             await _context.SaveChangesAsync();
 
             // Return result with success and failure counts plus failure reasons details
-            return Ok(new
+            return Ok(new UploadResult
             {
                 Success = successCount,
                 Failure = failureCount,
